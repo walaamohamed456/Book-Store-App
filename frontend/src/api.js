@@ -1,6 +1,5 @@
 
-const API_BASE = 'http://localhost:3000';
-
+const API_BASE = 'https://book-store-app-production-0763.up.railway.app';
 async function request(path, { token, ...options } = {}) {
   const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) };
   if (token) headers.Authorization = `Bearer ${token}`;
